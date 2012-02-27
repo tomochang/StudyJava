@@ -13,7 +13,7 @@ class Factorization {
       for( int i=-1; i>=i1 ; i= i - 1 ){
         int resultMod = i1 % i;
         if (i != -1 && i != i1 && resultMod == 0){
-          System.out.print(i + " " );
+          System.out.print(i + "\t" );
         }
       }
     }
