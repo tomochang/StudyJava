@@ -3,13 +3,18 @@ class Circle {
 	double y;
 	double radius;
 
-	Circle() {
+	Circle(double x) {
+		this(x,0,1);
 	}
 
-	Circle(double ax, double ay, double aradius){
-		x = ax;
-		y = ay;
-		radius = aradius;
+	Circle(double x,double y) {
+		this(x,y,1);
+	}
+
+	Circle(double x, double y, double radius){
+		this.x = x;
+		this.y = y;
+		this.radius = radius;
 	}
 }
 
