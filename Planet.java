@@ -1,5 +1,5 @@
 class Planet {
-	static String PlanetName[] = {"earth","moon","jupiter","mars"};
+	static String PlanetName[] = {"earth","moon","jupiter","mars","sun"};
 	static int m = PlanetName.length;
 
 }
@@ -11,6 +11,7 @@ class SolarSystem {
 
 	void display(){
 		int i;
+
 		for(i = 0; i < Planet.m ; i++){
 			System.out.println(Planet.PlanetName[i]);
 		}
