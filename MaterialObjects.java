@@ -1,29 +1,29 @@
-interface Material{
-	String bronze = "bronze";
-	String gold = "gold";
-	String marble = "marble";
-	String silver = "silver";
-	String wood = "wood";
+enum Material{
+	bronze,
+	gold,
+	marble,
+	silver,
+	wood;
 }
 
 abstract class MaterialObject{
-	String material;
+	Material material;
 }
 
 class Ball extends MaterialObject {
-	Ball(String material){
+	Ball(Material material){
 		this.material = material;
 	}
 }
 
 class Coin extends MaterialObject {
-	Coin(String material){
+	Coin(Material material){
 		this.material = material;
 	}
 }
 
 class Ring extends MaterialObject {
-	Ring(String material){
+	Ring(Material material){
 		this.material = material;
 	}
 }
@@ -32,9 +32,11 @@ class MaterialObjects{
 	public static void main(String args[]){
 		Ball ball = new Ball(Material.wood);
 		Coin coin = new Coin(Material.silver);
+		Ring ring = new Ring(Material.marble);
 
 		System.out.println(ball.material);
 		System.out.println(coin.material);
+		System.out.println(ring.material);
 
 	}
 }
